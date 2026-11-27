@@ -3,7 +3,7 @@
 Bilgisayarınızda not tutmayı daha eğlenceli hale getirecek estetik bir notepad uygulaması🩷
 
 <p align="center">
-<img width="500" alt="resim" src="https://github.com/user-attachments/assets/2e0ab704-bbc2-4fa0-b203-739513386a92" />
+<img width="500" alt="resim" src="https://github.com/user-attachments/assets/8aff7748-68be-4962-8bc1-558e7bbfec33" />
 </p>
 
 ## Nasıl Kurulur?
