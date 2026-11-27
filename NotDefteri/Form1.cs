@@ -20,7 +20,9 @@ namespace NotDefteri
             this.Text = "Not Defterim";
             this.Width = 600;
             this.Height = 400;
+            this.MinimumSize = new Size(300, 200);
             this.BackColor = Color.Pink;
+            this.Icon = new Icon("icon.ico");
             this.KeyPreview = true; // Formun klavye kısayollarını dinlemesini sağlar
             this.KeyDown += Form1_KeyDown; // Ctrl+S için
 
@@ -69,6 +71,7 @@ namespace NotDefteri
             metinAlani.Size = new Size(560, 270); // Kenarlardan hafif boşluklu boyutta
             metinAlani.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right; // Pencere büyütülünce onun da büyümesi için
             metinAlani.BackColor = Color.LavenderBlush;
+            metinAlani.Font = new Font("Segoe UI", 12);
             metinAlani.ScrollBars = ScrollBars.Both; // Kaydırma çubukları
             metinAlani.AllowDrop = true; // Sürükle-bırak özelliğini aç
 
@@ -78,6 +81,10 @@ namespace NotDefteri
 
             // TextBox'ı forma ekleme
             this.Controls.Add(metinAlani);
+
+            //butonları en öne getirdim
+            btnSoru.BringToFront();
+            btnYeniDosya.BringToFront();
         }
 
         private void BtnSoru_Click(object sender, EventArgs e)
@@ -88,7 +95,7 @@ namespace NotDefteri
                            "♥ Ctrl+S ile yaptığın değişiklikleri kaydedebilirsin.\n\n" +
                            "Diğer projelerimi görmek ve bana destek olmak için: https://github.com/nursezakarakaya";
 
-            MessageBox.Show(mesaj, "Nasıl Kullanılır?", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            MessageBox.Show(mesaj, "Nasıl Kullanılır?", MessageBoxButtons.OK, MessageBoxIcon.None);
         }
 
         private void BtnYeniDosya_Click(object sender, EventArgs e)
@@ -135,7 +142,7 @@ namespace NotDefteri
             // Eğer basılan tuş Ctrl ve S ise
             if (e.Control && e.KeyCode == Keys.S)
             {
-                // Ekstra: Ctrl+S dıt sesini engellemek istersen buraya "e.SuppressKeyPress = true;" yazabilirsin
+                e.SuppressKeyPress = true; //sesi engellemek için
                 DosyayiKaydet();
             }
         }
