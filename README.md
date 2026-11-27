@@ -1,9 +1,9 @@
-# Cutecore Notepad Ver. 1.0
+# Cutecore Notepad Ver. 1.1
 
 Bilgisayarınızda not tutmayı daha eğlenceli hale getirecek estetik bir notepad uygulaması🩷
 
 <p align="center">
-<img width="500" alt="resim" src="https://github.com/user-attachments/assets/23387c3d-745a-4fd6-86eb-176646e198c4" />
+<img width="500" alt="resim" src="https://github.com/user-attachments/assets/2e0ab704-bbc2-4fa0-b203-739513386a92" />
 </p>
 
 ## Nasıl Kurulur?
