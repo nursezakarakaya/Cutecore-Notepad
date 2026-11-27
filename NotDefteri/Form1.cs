@@ -89,7 +89,7 @@ namespace NotDefteri
 
         private void BtnSoru_Click(object sender, EventArgs e)
         {
-            string mesaj = "Cutecore Notepad Version 1.0 \n\n" +
+            string mesaj = "Cutecore Notepad Version 1.1 \n\n" +
                            "♥ Düzenlemek istediğin belgeleri bu pencereye sürükleyerek açabilirsin!! :33\n\n" +
                            "♥ Yeni boş bir sayfa açmak için sağ üstteki butonu kullanman yeterli.\n\n" +
                            "♥ Ctrl+S ile yaptığın değişiklikleri kaydedebilirsin.\n\n" +
